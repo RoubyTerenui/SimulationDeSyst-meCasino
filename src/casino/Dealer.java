@@ -1,3 +1,4 @@
+package casino;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -36,6 +37,7 @@ public class Dealer {
 		result[0]=(int)(deck.get(0))/13;
 		result[1]=(int)(deck.get(0))%13;
 		
+		shuffle();
 		shuffle();
 		return result;
 	}

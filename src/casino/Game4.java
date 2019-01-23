@@ -1,5 +1,10 @@
-public class game4 {
-    public int fourthGame(dealer dealer){
+package casino;
+
+public class Game4 {
+	public Game4(){
+		super();
+	}
+    public static int fourthGame(Dealer dealer){
         int[] firstCard = dealer.draw_Card_Without_Rep();
         int[] secondCard = dealer.draw_Card_Without_Rep();
         int[] thirdCard = dealer.draw_Card_Without_Rep();
