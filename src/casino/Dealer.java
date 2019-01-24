@@ -4,8 +4,10 @@ import java.util.List;
 import java.util.Random;
 
 public class Dealer {
+	//attributes
 	private List deck= new ArrayList();
-	
+
+	//constructor
 	public Dealer() {
 		super();
 		for(int i=0;i<52;i++) {
@@ -14,7 +16,8 @@ public class Dealer {
 		shuffle();
 		shuffle();
 	}
-	
+
+	//methods
 	private void shuffle() {
 
 		Random rand = new Random(); 

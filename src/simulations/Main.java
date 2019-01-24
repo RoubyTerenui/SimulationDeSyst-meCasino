@@ -31,13 +31,13 @@ public class Main {
 				nbwin4 += 1;
 			}
 		}
-		System.out.printf("Il y a eu %d victoires  c'est à dire un pourcentage de victoire pour le jeu 1 de : %f \n",
+		System.out.printf("Il y a eu %d victoires  cest a dire un pourcentage de victoire pour le jeu 1 de : %f \n",
 				nbwin1, ((double) (nbwin1 * 100)) / 1000000);
-		System.out.printf("Il y a eu %d victoires c'est à dire un pourcentage de victoire pour le jeu 2 de : %f \n",
+		System.out.printf("Il y a eu %d victoires cest a dire un pourcentage de victoire pour le jeu 2 de : %f \n",
 				nbwin2, ((double) (nbwin2) * 100) / 1000000);
-		System.out.printf("Il y a eu %d victoires c'est à dire un pourcentage de victoire pour le jeu 3 de : %f \n",
+		System.out.printf("Il y a eu %d victoires cest a dire un pourcentage de victoire pour le jeu 3 de : %f \n",
 				nbwin3, ((double) (nbwin3) * 100) / 1000000);
-		System.out.printf("Il y a eu %d victoires c'est à dire un pourcentage de victoire pour le jeu 4 de : %f \n",
+		System.out.printf("Il y a eu %d victoires cest a dire un pourcentage de victoire pour le jeu 4 de : %f \n",
 				nbwin4, ((double) (nbwin4) * 100) / 1000000);
 	}
 }

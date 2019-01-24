@@ -1,9 +1,13 @@
 package casino;
 
 public class Game2 {
+
+    //attributes
 	public Game2() {
 		super();
 	}
+
+	//methods
     public static int second_Game(Dealer dealer){
         int[] firstCard = dealer.draw_Card_With_Rep();
         int[] secondCard = dealer.draw_Card_With_Rep();
