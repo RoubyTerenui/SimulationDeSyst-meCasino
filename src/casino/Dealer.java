@@ -10,41 +10,40 @@ public class Dealer {
 	//constructor
 	public Dealer() {
 		super();
-		for(int i=0;i<52;i++) {
+		for(int i=0; i < 52; i++) {
 			deck.add(i);
 		}
+
+		//On mélange deux fois pour copier à la réalité (raremment mélangé qu'une fois)
 		shuffle();
 		shuffle();
 	}
 
 	//methods
+	//Cette methode va nous permettre de melanger le paquet
 	private void shuffle() {
-
-		Random rand = new Random(); 
-		
+		Random rand = new Random();
 		for(int i=0;i<deck.size();i++) {
-			
-			// Random for remaining positions. 
-            int r = i + rand.nextInt(deck.size() - i); 
-            
-            //swapping the elements 
-            int temp = (int)deck.get(r); 
+            int r = i + rand.nextInt(deck.size() - i);
+            int temp = (int)deck.get(r);
             deck.set(r, deck.get(i)); 
             deck.set(i,temp); 
 		}
 	}
-	
+
+	//Tirer des cartes avec remise
 	public int[] draw_Card_With_Rep() {
 		
-		int[] result=new int[2];
-		result[0]=(int)(deck.get(0))/13;
-		result[1]=(int)(deck.get(0))%13;
+		int[] result = new int[2];
+		result[0]    = (int)(deck.get(0))/13;
+		result[1]    = (int)(deck.get(0))%13;
 		
 		shuffle();
 		shuffle();
 		return result;
 	}
-	
+
+	//Tirer des cartes sans remises
 	public int[] draw_Card_Without_Rep() {
 		
 		int[] result=new int[2];
@@ -55,14 +54,5 @@ public class Dealer {
 		
 		shuffle();
 		return result;
-	}
-	
-	public void reinitialize() {
-		deck.clear();
-		for(int i=0;i<52;i++) {
-			deck.add(i);
-		}
-		shuffle();
-		shuffle();
 	}
 }
