@@ -20,11 +20,11 @@ public class Game5 {
         List<Integer> deck = new ArrayList<>();
 
         //La couleur ne m'importe pas donc je prend juste la valeur
-        deck.add(firstCard[0]);
-        deck.add(secondCard[0]);
-        deck.add(thirdCard[0]);
-        deck.add(fourthCard[0]);
-        deck.add(fifthCard[0]);
+        deck.add(firstCard[1]);
+        deck.add(secondCard[1]);
+        deck.add(thirdCard[1]);
+        deck.add(fourthCard[1]);
+        deck.add(fifthCard[1]);
 
         //J'ai besoin de créer un Set pour supprimmer les doublons pouvant fausser le calcul que l'on effectura
         Set set = new HashSet() ;

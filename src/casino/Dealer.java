@@ -13,9 +13,6 @@ public class Dealer {
 		for(int i=0; i < 52; i++) {
 			deck.add(i);
 		}
-
-		//On mélange deux fois pour copier à la réalité (raremment mélangé qu'une fois)
-		shuffle();
 		shuffle();
 	}
 
@@ -38,7 +35,6 @@ public class Dealer {
 		result[0]    = (int)(deck.get(0))/13;
 		result[1]    = (int)(deck.get(0))%13;
 		
-		shuffle();
 		shuffle();
 		return result;
 	}

@@ -13,7 +13,7 @@ public class Game1 {
         int[] cardFromDealer = dealer.draw_Card_With_Rep();
 
         //Si la carte est un As : gagné
-        if(cardFromDealer[0] == 0) return 1;
+        if(cardFromDealer[1] == 0) return 1;
 
         //Sinon perdu
         else return 0;

@@ -14,7 +14,7 @@ public class Game3 {
         int[] secondCard = dealer.draw_Card_Without_Rep();
 
         //Si la premiere carte est inferieur à la deuxieme : gagné
-        if(firstCard[0] < secondCard[0]) return 1;
+        if(firstCard[1] < secondCard[1]) return 1;
 
         //Sinon perdu
         else return 0;
