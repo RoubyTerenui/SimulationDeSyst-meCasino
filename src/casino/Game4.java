@@ -18,9 +18,9 @@ public class Game4 {
         int numberOfHeart = 0;
 
         //Je compte le nombre de coeur
-        if(firstCard[0] != 2) numberOfHeart++;
-        if(secondCard[0] != 2) numberOfHeart++;
-        if(thirdCard[0] != 2) numberOfHeart++;
+        if(firstCard[0] == 2) numberOfHeart++;
+        if(secondCard[0] == 2) numberOfHeart++;
+        if(thirdCard[0] == 2) numberOfHeart++;
 
         //Si il y au moins un coeur : gagné
         if(numberOfHeart != 0) return 1;

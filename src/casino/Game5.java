@@ -27,25 +27,20 @@ public class Game5 {
         deck.add(fifthCard[1]);
 
         //J'ai besoin de créer un Set pour supprimmer les doublons pouvant fausser le calcul que l'on effectura
-        Set set = new HashSet() ;
+        Set set = new HashSet();
         set.addAll(deck);
-        ArrayList deckWithoutDoublons = new ArrayList(set) ;
+        ArrayList deckWithoutDoublons = new ArrayList(set);
 
         //Je trie ma liste sans doublons par ordre croissant
         Collections.sort(deckWithoutDoublons);
 
         //Je verifie que cette liste sans doublons contient au moins 3 cartes
-        if(deckWithoutDoublons.size() >= 3){
-            for(int i=0; i < deckWithoutDoublons.size() - 3; i++){
-                //Voici la valeur théorique que nous devons avoir s'il y a une suite
-                int normalyValue = 3 * deck.get(i) + 3;
-
-                //Voici la valeur pratique que nous avons actuellemnt
-                int realValue = deck.get(i) + deck.get(i+1) + deck.get(i+2);
-
-                //On compare ces deux valeurs
-                if(normalyValue == realValue){
-                    //gagné
+        if(deckWithoutDoublons.size() > 2){
+            //On parcourt toute la liste
+            for(int i=0; i < deckWithoutDoublons.size() - 2; i++){
+                //On verifie que les cartes se suivent
+                if((int)deckWithoutDoublons.get(i+1) == (int)deckWithoutDoublons.get(i) + 1 &&
+                        (int)deckWithoutDoublons.get(i+2) == (int)deckWithoutDoublons.get(i+1) + 1){
                     return 1;
                 }
             }
