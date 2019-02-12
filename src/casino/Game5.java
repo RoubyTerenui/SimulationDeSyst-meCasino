@@ -35,17 +35,12 @@ public class Game5 {
         Collections.sort(deckWithoutDoublons);
 
         //Je verifie que cette liste sans doublons contient au moins 3 cartes
-        if(deckWithoutDoublons.size() >= 3){
+        if(deckWithoutDoublons.size() > 2){
+            //On parcourt toute la liste
             for(int i=0; i < deckWithoutDoublons.size() - 2; i++){
-                //Voici la valeur théorique que nous devons avoir s'il y a une suite
-                int normalyValue = 3 * deck.get(i) + 3;
-
-                //Voici la valeur pratique que nous avons actuellemnt
-                int realValue = deck.get(i) + deck.get(i+1) + deck.get(i+2);
-
-                //On compare ces deux valeurs
-                if(normalyValue == realValue){
-                    //gagné
+                //On verifie que les cartes se suivent
+                if((int)deckWithoutDoublons.get(i+1) == (int)deckWithoutDoublons.get(i) + 1 &&
+                        (int)deckWithoutDoublons.get(i+2) == (int)deckWithoutDoublons.get(i+1) + 1){
                     return 1;
                 }
             }
