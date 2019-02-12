@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Partie 1}{}
+\contentsline {subsection}{\numberline {1.1}Dealer}{}
+\contentsline {subsection}{\numberline {1.2}M\IeC {\'e}lange du deck}{}
+\contentsline {subsection}{\numberline {1.3}R\IeC {\'e}sultat}{}
+\contentsline {subsection}{\numberline {1.4}Pertinence des r\IeC {\'e}sultat}{}
+\contentsline {subsubsection}{\numberline {1.4.1}Game 1}{}
+\contentsline {subsubsection}{\numberline {1.4.2}Game 2}{}
+\contentsline {subsubsection}{\numberline {1.4.3}Game 3}{}
+\contentsline {subsubsection}{\numberline {1.4.4}Game 4}{}
+\contentsline {subsubsection}{\numberline {1.4.5}Game 5}{}
+\contentsline {section}{\numberline {2}Partie 2}{}
