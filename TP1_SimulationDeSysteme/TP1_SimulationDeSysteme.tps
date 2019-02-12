@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=TP1_SimulationDeSysteme.tex
 
 [Frame0_View0,0]
-TopLine=15
-Cursor=482
+TopLine=56
+Cursor=2577
 
 [SessionInfo]
 FrameCount=1
